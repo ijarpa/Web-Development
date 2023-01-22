@@ -60,6 +60,7 @@ function divideNumbers() {
 
 document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 // Step 9: Test all of the mathematical functionality of the task3.html page.
+// Done
 
 
 /* BUILT-IN METHODS */
@@ -72,6 +73,8 @@ let currenteDate = new Date();
 let currentYear = currenteDate.getFullYear();
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
 document.querySelector("#year").textContent = currentYear
+
+
 
 /* ARRAY METHODS */
 
@@ -96,8 +99,22 @@ let evenNumbers = numbers.filter(function(evens){
 document.querySelector("#evens").textContent = evenNumbers;
 
 // Step 5: Use the reduce array method to sum the array variable elements and assign the result to the HTML element with an ID of "sumOfArray"
+let reduceNumbers = numbers.reduce(function(acc, curr){
+    return acc + curr;
+}, 0);
 
+document.querySelector("#sumOfArray").textContent = reduceNumbers;
 
 // Step 6: Use the map array method to multiple each element in the array variable by 2 and assign the result to the HTML element with an ID of "multiplied"
+let mapNumbers = numbers.map(function(x){
+    return x * 2;
+});
+
+document.querySelector("#multiplied").textContent = mapNumbers;
 
 // Step 7: Use the map and reduce array methods to sum the array elements after multiplying each element by two.  Assign the result to the HTML element with an ID of "sumOfMultiplied"
+let mapNumbersMultiplied = mapNumbers.reduce(function(acc, curr){
+    return acc + curr;
+}, 0);
+
+document.querySelector("#sumOfMultiplied").textContent = mapNumbersMultiplied;
