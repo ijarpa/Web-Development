@@ -6,8 +6,22 @@ body {
     font-family: "Montserrat";
 }
 
+#max-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
 p {
     font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
 }
 
 header {
@@ -45,29 +59,57 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
-#barra-nav a {
-    margin: 0 20px;
+.menu {
+    padding: 0;
+    display: flex;
+  }
+
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item a {
+    display: block;
+    width: 150px;
+    padding: 10px 10px;
     text-decoration: none;
     color: #1d3557;
-}
-
-#barra-nav a:hover {
-    margin: 0 20px;
+  }
+  .menu-item:hover .menu-title {
+    display: block;
+    width: 150px;
+    padding: 10px 10px;
     text-decoration: none;
-    color: gray;
-}
+    background-color: #deedfc;
+    transition: all 1s;
+  }
 
-#barra-nav nav {
-    margin: auto 0;
-}
-
-#barra-nav h2 {
-    padding: 5px 30px 5px 10px;
-    margin: 0 50px;
-    background-color: black;
-    color: white;
-    width: 180px;
-}
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+  }
+  
+  .sub-menu-item a {
+    display: block;
+    padding: 10px 10px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+  }
+  .sub-menu-item:hover a {
+    display: block;
+    padding: 10px 10px;
+    background-color: #1d3557;
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
 
 main {
     max-width: 1200px;
@@ -192,14 +234,14 @@ footer {
     grid-column: 2/3;
 }
 
-ul {
+#futureprojects ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-li {
+#futureprojects li {
     display: inline-block;
     padding: 20px 50px;
 }
@@ -212,6 +254,32 @@ footer .logo-text {
 .logo-instagram .logo-insta {
     width: 50px;
 }
+
+/* MOVIE STYLE */
+#content-movie {
+  width: 1200px;
+}
+
+#movie-img {
+  width: 500px;
+  clip-path: circle(50% at 50% 50%);
+  float: right;
+}
+
+.movie-img-2 {
+  width: 400px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.movie-opinion {
+  font-size: 1.2em;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+
 
 @media only screen and (max-width: 800px) {
     header {
