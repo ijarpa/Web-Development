@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokemon List</h1>
+        <img src="images/pokelogo.png" alt="Logo">
+    </header>
+    <main>
+        <h2>Select the POKEMON that you want to view!</h2>
+        <img id="pokeball" src="images/Pokeball-PNG-Photos.png" alt="Logo">
+        <select id="list">
+            <option value="" disabled selected>Selecciona un Pokémon</option>
+          </select>
+        <div id="app">
+            <p>Pokemon Name</p>
+            <p>Index in Pokedex</p>
+            <p>Abilities</p>
+            <img src="images/pokedex.png" alt="pokedex">
+        </div>
+    </main>
+    <footer>
+        &copy<span id="year"></span>
+    </footer>
+
+    <script src="script/script.js" type="module"></script>
+</body>
+</html>
