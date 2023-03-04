@@ -1,0 +1,65 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.estacionamiento {
+    margin: 0 auto;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.boton {
+    color: white;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disponible input {
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+  /* Estilos para pantallas de 768px o más */
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    padding: 5px;
+    justify-self: end;
+  }
+
+  .boton {
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .estacionamiento {
+    margin-left: 50%;
+  }
+
+}
