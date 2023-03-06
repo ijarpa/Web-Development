@@ -1,6 +1,6 @@
 var lista = document.querySelector("#lista");
 
-for (var i = 1; i <= 10; i++)
+for (var i = 1; i <= 30; i++)
 {
     var li = document.createElement("li");
 
